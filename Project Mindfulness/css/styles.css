@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+nbnbnmnbnmbnm nnmnnbnnbnb html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #B17979;
+}
+
+#canvasHolder {
+  width: 100%;
+  float: left;
+  height: 500px;
+  clear: both;
+  margin-bottom: 0px;
+}
+#canvasHolder canvas {
+  float: left;
+  height: 480px;
+  width: 470px;
+  left: 75%;
+  background-color: white;
+  position: relative;
+  margin-left: -360px;
+  border: 10px solid #000; /*picture border color*/
+  cursor: crosshair;
+}
+
+#imageSelector {
+  width: 470px; /*picure selection size*/
+  float: left;
+  position: relative;
+  left: 75%;
+  margin-left: -360px;
+  margin-top: 20px;
+  background-color: white;
+}
+#imageSelector img {
+  float: left;
+  width: 23%;
+  margin: 5px 1% 5px 1%;
+  height: 150px;
+}
+#imageSelector img:hover {
+  background: #EFD2D2; /*check to see if hoever effect work prope*/
+  cursor: pointer;
+}
+
+.controls {
+  float: left;
+  position: relative;
+  background-color: #8E668D; /*tool selection background*/
+  clear: both;
+  width: 500px;
+  left: 71%;
+  padding: 20px;
+  margin-left: -360px;
+}
+.controls div {
+  margin: 0px 20px 0px 20px;
+  float: left;
+}
+.controls div i {
+  color: #B17979;
+  float: left;
+  position: relative;
+  font-size: 30pt;
+}
+.controls div i:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.controls input[type=color] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 110%;
+  border: 0px;
+  padding: 0px;
+  padding-top: 25px;
+  outline: 0px;
+  background: rgba(30, 133, 192, 0);
+  margin: 0px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  left: 0;
+}
+.controls input[type=range] {
+  -webkit-appearance: none;
+  border: 2px solid 0;
+  border-radius: 20px;
+  margin-top: 12px;
+  width: 100px;
+  height: 10px;
+  background: #333; /*color of brush size wheel*/
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.controls input[type=range]::-webkit-slider-runnable-track {
+  height: 0px;
+  background: #ddd;
+  border: none;
+  border-radius: 3px;
+}
+.controls input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: #B17979; /*color of brush size wheel ball*/
+  margin-top: -15px;
+}
+.controls input[type=range]:focus {
+  outline: none;
+}
